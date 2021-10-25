@@ -223,6 +223,26 @@ header {
             text-decoration: none;
             padding: 21px 0;
         }
+
+        .bottle-details__container {
+            width: 100%;
+
+            .bottle-details__container-detail {
+                color: var(--purple-gray);
+                font-size: 20px;
+                padding: 20px 0;
+
+                .bottle-detail__header {
+                    font-family: 'Poppins', sans-serif;
+                }
+
+                .bottle-detail__info {
+                    color: var(--orange);
+                    font-size: 30px;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+        }
     }
 }
 

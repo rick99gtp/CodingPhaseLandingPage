@@ -225,6 +225,26 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   padding: 21px 0;
 }
 
+.main .bottle-description__container .bottle-details__container {
+  width: 100%;
+}
+
+.main .bottle-description__container .bottle-details__container .bottle-details__container-detail {
+  color: var(--purple-gray);
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.main .bottle-description__container .bottle-details__container .bottle-details__container-detail .bottle-detail__header {
+  font-family: 'Poppins', sans-serif;
+}
+
+.main .bottle-description__container .bottle-details__container .bottle-details__container-detail .bottle-detail__info {
+  color: var(--orange);
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
 .logo-color {
   color: var(--orange);
 }
