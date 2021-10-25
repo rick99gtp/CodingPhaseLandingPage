@@ -1,0 +1,106 @@
+header {
+    width: 86%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .header__logo {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 26px;
+        letter-spacing: 3px;
+
+        a {
+            transition: .3s ease;
+            text-decoration: none;
+
+            &:link {
+                color: #000;
+            }
+
+            &:hover {
+                color: var(--orange);
+            }
+        }
+    }
+
+    .header__options-container {
+        display: none;
+
+        nav {
+            margin-right: 118px;
+
+            ul {
+                li {
+                    font-size: 18px;
+                    font-family: Arial, sans-serif;
+                    padding: 0 23px;
+
+                    a {
+                        display: block;
+                        position: relative;
+                        text-decoration: none;
+
+                        &:link {
+                            color: #000;
+                        }
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 0;
+                            top: 150%;
+                            background-color: var(--orange);
+                            transition: .3s ease;
+                            opacity: 0;
+                        }
+
+                        &.active-link::before {
+                            opacity: 1;
+                            width: 100%;
+                        }
+
+                        &:hover {
+                            &::before {
+                                opacity: 1;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .header__user-options {
+            ul {
+                li {
+                    padding: 0 14px;
+                    
+                    a {
+                        transition: .3s ease;
+
+                        &:link {
+                            color: #000;
+                        }
+
+                        &:hover {
+                            color: var(--orange);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hamburger-menu__container {
+
+        .hamburger-menu__line {
+            height: 3px;
+            width: 40px;
+            background-color: var(--orange);
+            
+            &:nth-child(2) {
+                margin: 10px 0;
+            }
+        }
+    }
+}

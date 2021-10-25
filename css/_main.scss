@@ -1,0 +1,131 @@
+.main {
+    margin-top: 25px;
+
+    .main__bottle-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .bottle-description__container {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+
+        .bottle-description__organic-tea {
+            display: inline-block;
+            position: relative;
+            font-size: 14px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: #000;
+                height: 1px;
+                width: 30px;
+                top: 50%;
+                left: 110%;
+                transform: translateY(-50%);
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: #000;
+                height: 1px;
+                width: 30px;
+                top: 50%;
+                left: -10%;
+                transform: translate(-110%, -50%);
+            }
+        }
+
+        h1 {
+            color: var(--purple-gray);
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.35rem;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 40px;
+            color: var(--orange);
+            line-height: 20px;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+
+        p {
+            &.bottle-text {
+                font-family: 'Poppins', sans-serif;
+                text-align: justify;
+                line-height: 1.5;
+                font-size: 16px;
+                margin: 25px 0;
+            }
+
+            &.bottle-price {
+                font-family: 'Lato', sans-serif;
+                color: var(--dark-gray);
+                font-size: 44px;
+            }
+        }
+
+        hr {
+
+            &.bottle-price-line {
+                margin-top: 25px;
+                color: var(--dark-gray);
+            }
+        }
+
+        a {
+            margin: 50px auto 0;
+            display: block;
+            background-color: var(--purple-gray);
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 21px 0;
+        }
+
+        .bottle-details__container {
+            width: 100%;
+            margin: 50px 0;
+
+            .bottle-details__container-detail {
+                color: var(--purple-gray);
+                font-size: 20px;
+                padding: 20px 0;
+
+                .bottle-detail__header {
+                    font-family: 'Poppins', sans-serif;
+                }
+
+                .bottle-detail__info {
+                    color: var(--orange);
+                    font-size: 30px;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+        }
+    }
+
+    .company-icons__container {
+        width: 100%;
+        background-color: var(--light-gray);
+        padding: 30px 0;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+
+        .company-icon {
+            width: 50%;
+            padding: 10px 0;
+
+            img {
+                width: 60%;
+            }
+        }
+    }
+}
