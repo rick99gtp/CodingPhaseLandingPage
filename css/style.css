@@ -240,12 +240,12 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 }
 
 .main .company-icons__container .company-icon {
-  width: 50%;
-  padding: 10px 0;
+  width: 100%;
+  padding: 20px 0;
 }
 
 .main .company-icons__container .company-icon img {
-  width: 60%;
+  width: 30%;
 }
 
 .customer-service__container {
@@ -257,7 +257,7 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 .customer-service__container h2 {
   text-align: center;
   font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .customer-service__container .customer-service__text {
@@ -269,6 +269,7 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 
 .customer-service__container .customer-service__icons {
   width: 100%;
+  margin-bottom: 70px;
 }
 
 .customer-service__container .customer-service__icons .customer-service-icon {
@@ -276,13 +277,82 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 }
 
 .customer-service__container .customer-service__icons .customer-service-icon img {
-  margin: 20px 0;
+  margin: 20px 0 0;
 }
 
 .customer-service__container .customer-service__icons .customer-service-icon p {
   width: 50%;
   font-size: 20px;
   margin: 0 auto;
+}
+
+.customer-service__container a {
+  background-color: var(--purple-gray);
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 25px;
+  -webkit-box-shadow: 0px 15px 20px 0px #8f8f8f;
+          box-shadow: 0px 15px 20px 0px #8f8f8f;
+}
+
+.arie-kombucha__container {
+  color: var(--purple-gray);
+  padding: 25px 5px;
+}
+
+.arie-kombucha__container h2 {
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 36px;
+}
+
+.arie-kombucha__container p {
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.kombucha-flavors__container {
+  padding: 0 5px;
+  text-align: center;
+}
+
+.kombucha-flavors__container .kombucha-flavors__item img {
+  width: 100%;
+}
+
+.kombucha-flavors__container .kombucha-flavors__item .kombucha-flavors__item-details .kombucha-small {
+  letter-spacing: 4px;
+  font-size: 16px;
+  color: var(--orange);
+  font-family: 'PT Sans', sans-serif;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.kombucha-flavors__container .kombucha-flavors__item .kombucha-flavors__item-details h3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 30px;
+  color: var(--purple-gray);
+  padding: 10px 10px;
+}
+
+.kombucha-flavors__container .kombucha-flavors__item .kombucha-flavors__item-details .kombucha-item__description {
+  text-align: justify;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  padding: 0 10px;
+  margin-bottom: 40px;
+}
+
+.kombucha-flavors__container .kombucha-flavors__item .kombucha-flavors__item-details a {
+  background-color: var(--purple-gray);
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 25px;
+  -webkit-box-shadow: 0px 15px 20px 0px #8f8f8f;
+          box-shadow: 0px 15px 20px 0px #8f8f8f;
 }
 
 body {

@@ -1,0 +1,46 @@
+.kombucha-flavors__container {
+    padding: 0 5px;
+    text-align: center;
+
+    .kombucha-flavors__item {
+
+        img {
+            width: 100%;
+        }
+
+        .kombucha-flavors__item-details {
+
+            .kombucha-small {
+                letter-spacing: 4px;
+                font-size: 16px;
+                color: var(--orange);
+                font-family: 'PT Sans', sans-serif;
+                margin-top: 20px;
+                padding: 0 10px;
+            }
+
+            h3 {
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-size: 30px;
+                color: var(--purple-gray);
+                padding: 10px 10px;
+            }
+
+            .kombucha-item__description {
+                text-align: justify;
+                line-height: 1.5;
+                font-family: 'Poppins', sans-serif;
+                padding: 0 10px;
+                margin-bottom: 40px;
+            }
+
+            a {
+                background-color: var(--purple-gray);
+                text-decoration: none;
+                color: #fff;
+                padding: 20px 25px;
+                box-shadow: 0px 15px 20px 0px rgba(143,143,143,1);
+            }
+        }
+    }
+}

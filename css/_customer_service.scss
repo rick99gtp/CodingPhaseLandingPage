@@ -6,7 +6,7 @@
     h2 {
         text-align: center;
         font-family: 'Montserrat Alternates', sans-serif;
-        font-size: 24px;
+        font-size: 36px;
     }
 
     .customer-service__text {
@@ -18,12 +18,13 @@
 
     .customer-service__icons {
         width: 100%;
+        margin-bottom: 70px;
 
         .customer-service-icon {
             margin: 20px 0;
 
             img {
-                margin: 20px 0;
+                margin: 20px 0 0;
             }
 
             p {
@@ -34,5 +35,12 @@
         }
     }
 
+    a {
+        background-color: var(--purple-gray);
+        text-decoration: none;
+        color: #fff;
+        padding: 20px 25px;
+        box-shadow: 0px 15px 20px 0px rgba(143,143,143,1);
+    }
 
 }
