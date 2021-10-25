@@ -60,22 +60,26 @@ header .header__options-container nav ul li a:link {
   color: #000;
 }
 
-header .header__options-container nav ul li a.active-link::before {
+header .header__options-container nav ul li a::before {
   content: '';
   position: absolute;
   height: 2px;
-  width: 100%;
+  width: 0;
   top: 150%;
   background-color: var(--orange);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  opacity: 0;
+}
+
+header .header__options-container nav ul li a.active-link::before {
+  opacity: 1;
+  width: 100%;
 }
 
 header .header__options-container nav ul li a:hover::before {
-  content: '';
-  position: absolute;
-  height: 2px;
+  opacity: 1;
   width: 100%;
-  top: 150%;
-  background-color: var(--orange);
 }
 
 header .header__options-container .header__user-options ul li {

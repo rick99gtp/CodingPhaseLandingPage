@@ -53,23 +53,26 @@ header {
                             color: #000;
                         }
 
-                        &.active-link::before {
+                        &::before {
                             content: '';
                             position: absolute;
                             height: 2px;
-                            width: 100%;
+                            width: 0;
                             top: 150%;
                             background-color: var(--orange);
+                            transition: .3s ease;
+                            opacity: 0;
+                        }
+
+                        &.active-link::before {
+                            opacity: 1;
+                            width: 100%;
                         }
 
                         &:hover {
                             &::before {
-                                content: '';
-                                position: absolute;
-                                height: 2px;
+                                opacity: 1;
                                 width: 100%;
-                                top: 150%;
-                                background-color: var(--orange);
                             }
                         }
                     }
