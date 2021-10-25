@@ -1,3 +1,38 @@
 .customer-service__container {
-    display: flex;
+    padding: 50px 5px;
+    color: var(--purple-gray);
+    text-align: center;
+
+    h2 {
+        text-align: center;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 24px;
+    }
+
+    .customer-service__text {
+        text-align: center;
+        line-height: 1.5;
+        margin-top: 30px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .customer-service__icons {
+        width: 100%;
+
+        .customer-service-icon {
+            margin: 20px 0;
+
+            img {
+                margin: 20px 0;
+            }
+
+            p {
+                width: 50%;
+                font-size: 20px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+
 }
