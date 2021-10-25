@@ -1,5 +1,7 @@
 :root {
     --orange: #ff5230;
+    --purple-gray: #545268;
+    --dark-gray: #3a3a3a;
 }
 
 * {
@@ -129,6 +131,103 @@ header {
             }
         }
     }
+}
+
+.main {
+    margin-top: 25px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bottle-description__container {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+
+        .bottle-description__organic-tea {
+            display: inline-block;
+            position: relative;
+            font-size: 14px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: #000;
+                height: 1px;
+                width: 30px;
+                top: 50%;
+                left: 110%;
+                transform: translateY(-50%);
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: #000;
+                height: 1px;
+                width: 30px;
+                top: 50%;
+                left: -10%;
+                transform: translate(-110%, -50%);
+            }
+        }
+
+        h1 {
+            color: var(--purple-gray);
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.35rem;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 40px;
+            color: var(--orange);
+            line-height: 20px;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+
+        p {
+            &.bottle-text {
+                font-family: 'Poppins', sans-serif;
+                text-align: justify;
+                line-height: 1.5;
+                font-size: 16px;
+                margin: 25px 0;
+            }
+
+            &.bottle-price {
+                font-family: 'Lato', sans-serif;
+                color: var(--dark-gray);
+                font-size: 44px;
+            }
+        }
+
+        hr {
+
+            &.bottle-price-line {
+                margin-top: 25px;
+                color: var(--dark-gray);
+            }
+        }
+
+        a {
+            margin: 50px auto;
+            display: block;
+            background-color: var(--purple-gray);
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 21px 0;
+        }
+    }
+}
+
+.logo-color {
+    color: var(--orange);
 }
 
 @media screen and (min-width: 1000px) {

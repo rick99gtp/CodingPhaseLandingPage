@@ -1,5 +1,7 @@
 :root {
   --orange: #ff5230;
+  --purple-gray: #545268;
+  --dark-gray: #3a3a3a;
 }
 
 * {
@@ -131,6 +133,100 @@ header .hamburger-menu__container .hamburger-menu__line {
 
 header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   margin: 10px 0;
+}
+
+.main {
+  margin-top: 25px;
+}
+
+.main img {
+  width: 100%;
+  height: auto;
+}
+
+.main .bottle-description__container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main .bottle-description__container .bottle-description__organic-tea {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+}
+
+.main .bottle-description__container .bottle-description__organic-tea::before {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  height: 1px;
+  width: 30px;
+  top: 50%;
+  left: 110%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main .bottle-description__container .bottle-description__organic-tea::after {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  height: 1px;
+  width: 30px;
+  top: 50%;
+  left: -10%;
+  -webkit-transform: translate(-110%, -50%);
+          transform: translate(-110%, -50%);
+}
+
+.main .bottle-description__container h1 {
+  color: var(--purple-gray);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.35rem;
+  font-weight: 300;
+}
+
+.main .bottle-description__container h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 40px;
+  color: var(--orange);
+  line-height: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.main .bottle-description__container p.bottle-text {
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 16px;
+  margin: 25px 0;
+}
+
+.main .bottle-description__container p.bottle-price {
+  font-family: 'Lato', sans-serif;
+  color: var(--dark-gray);
+  font-size: 44px;
+}
+
+.main .bottle-description__container hr.bottle-price-line {
+  margin-top: 25px;
+  color: var(--dark-gray);
+}
+
+.main .bottle-description__container a {
+  margin: 50px auto;
+  display: block;
+  background-color: var(--purple-gray);
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 21px 0;
+}
+
+.logo-color {
+  color: var(--orange);
 }
 
 @media screen and (min-width: 1000px) {
