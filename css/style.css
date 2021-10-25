@@ -40,6 +40,16 @@ header .logo {
   letter-spacing: 3px;
 }
 
+header .logo a {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  text-decoration: none;
+}
+
+header .logo a:hover {
+  color: var(--orange);
+}
+
 header .header__options-container nav {
   margin-right: 118px;
 }
@@ -86,7 +96,16 @@ header .header__options-container .header__user-options ul li {
   padding: 0 14px;
 }
 
+header .header__options-container .header__user-options ul li a {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
 header .header__options-container .header__user-options ul li a:link {
   color: #000;
+}
+
+header .header__options-container .header__user-options ul li a:hover {
+  color: var(--orange);
 }
 /*# sourceMappingURL=style.css.map */

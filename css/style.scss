@@ -32,6 +32,15 @@ header {
         font-family: 'PT Sans', sans-serif;
         font-size: 26px;
         letter-spacing: 3px;
+
+        a {
+            transition: .3s ease;
+            text-decoration: none;
+
+            &:hover {
+                color: var(--orange);
+            }
+        }
     }
 
     .header__options-container {
@@ -84,8 +93,16 @@ header {
                 li {
                     padding: 0 14px;
                     
-                    a:link {
-                        color: #000;
+                    a {
+                        transition: .3s ease;
+
+                        &:link {
+                            color: #000;
+                        }
+
+                        &:hover {
+                            color: var(--orange);
+                        }
                     }
                 }
             }
