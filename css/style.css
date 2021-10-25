@@ -2,6 +2,7 @@
   --orange: #ff5230;
   --purple-gray: #545268;
   --dark-gray: #3a3a3a;
+  --light-gray: #fafafa;
 }
 
 * {
@@ -139,7 +140,7 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   margin-top: 25px;
 }
 
-.main img {
+.main .main__bottle-image {
   width: 100%;
   height: auto;
 }
@@ -216,7 +217,7 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 }
 
 .main .bottle-description__container a {
-  margin: 50px auto;
+  margin: 50px auto 0;
   display: block;
   background-color: var(--purple-gray);
   color: #fff;
@@ -227,6 +228,7 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 
 .main .bottle-description__container .bottle-details__container {
   width: 100%;
+  margin: 50px 0;
 }
 
 .main .bottle-description__container .bottle-details__container .bottle-details__container-detail {
@@ -243,6 +245,27 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   color: var(--orange);
   font-size: 30px;
   font-family: 'Poppins', sans-serif;
+}
+
+.main .company-icons {
+  width: 100%;
+  background-color: var(--light-gray);
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .company-icons .company-icon {
+  width: 50%;
+  padding: 25px 0;
+}
+
+.main .company-icons .company-icon img {
+  width: 80%;
 }
 
 .logo-color {
