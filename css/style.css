@@ -1,0 +1,88 @@
+:root {
+  --orange: #ff5230;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  padding: 45px 0;
+}
+
+.df {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  width: 86%;
+  margin: 0 auto;
+}
+
+header .logo {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+
+header .header__options-container nav {
+  margin-right: 118px;
+}
+
+header .header__options-container nav ul li {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  padding: 0 23px;
+}
+
+header .header__options-container nav ul li a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+
+header .header__options-container nav ul li a:link {
+  color: #000;
+}
+
+header .header__options-container nav ul li a.active-link::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 150%;
+  background-color: var(--orange);
+}
+
+header .header__options-container nav ul li a:hover::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 150%;
+  background-color: var(--orange);
+}
+
+header .header__options-container .header__user-options ul li {
+  padding: 0 14px;
+}
+
+header .header__options-container .header__user-options ul li a:link {
+  color: #000;
+}
+/*# sourceMappingURL=style.css.map */

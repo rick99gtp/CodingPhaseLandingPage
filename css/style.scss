@@ -1,0 +1,95 @@
+:root {
+    --orange: #ff5230;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    padding: 45px 0;
+}
+
+.df {
+    display: flex;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+header {
+    width: 86%;
+    margin: 0 auto;
+
+    .logo {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 26px;
+        letter-spacing: 3px;
+    }
+
+    .header__options-container {
+        nav {
+            margin-right: 118px;
+
+            ul {
+                li {
+                    font-size: 18px;
+                    font-family: Arial, sans-serif;
+                    padding: 0 23px;
+
+                    a {
+                        display: block;
+                        position: relative;
+                        text-decoration: none;
+
+                        &:link {
+                            color: #000;
+                        }
+
+                        &.active-link::before {
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 100%;
+                            top: 150%;
+                            background-color: var(--orange);
+                        }
+
+                        &:hover {
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                height: 2px;
+                                width: 100%;
+                                top: 150%;
+                                background-color: var(--orange);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .header__user-options {
+            ul {
+                li {
+                    padding: 0 14px;
+                    
+                    a:link {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .hamburger-menu-container {
+
+    }
+}
