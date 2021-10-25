@@ -27,8 +27,10 @@ body {
 header {
     width: 86%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 
-    .logo {
+    .header__logo {
         font-family: 'PT Sans', sans-serif;
         font-size: 26px;
         letter-spacing: 3px;
@@ -37,6 +39,10 @@ header {
             transition: .3s ease;
             text-decoration: none;
 
+            &:link {
+                color: #000;
+            }
+
             &:hover {
                 color: var(--orange);
             }
@@ -44,6 +50,8 @@ header {
     }
 
     .header__options-container {
+        display: none;
+
         nav {
             margin-right: 118px;
 
@@ -109,7 +117,30 @@ header {
         }
     }
 
-    .hamburger-menu-container {
+    .hamburger-menu__container {
 
+        .hamburger-menu__line {
+            height: 3px;
+            width: 40px;
+            background-color: var(--orange);
+            
+            &:nth-child(2) {
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header nav {
+        display: flex;
+    }
+
+    header .header__options-container {
+        display: flex;
+    }
+
+    header .hamburger-menu__container {
+        display: none;
     }
 }
