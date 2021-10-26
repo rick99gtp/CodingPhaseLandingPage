@@ -519,6 +519,7 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   -webkit-transition: .4s ease;
   transition: .4s ease;
   margin-top: 20px;
+  left: 0;
 }
 
 .testimonials__container .testimonial-carousel-wrapper .testimonial {
