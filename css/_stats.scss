@@ -1,0 +1,30 @@
+.stats__container {
+    background-color: var(--light-gray);
+    padding: 60px 5px;
+    font-family: 'Poppins', sans-serif;
+
+    .stats__container-chartbox {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 10px 20px 0px rgb(236, 236, 236);
+        text-align: center;
+    }
+
+    .stats__container-numbers {
+        text-align: center;
+
+        .stats-details {
+            color: var(--purple-gray);
+            padding: 20px 0;
+
+            p:first-child {
+                font-size: 30px;
+            }
+
+            p:nth-child(2) {
+                font-size: 16px;
+            }
+        }
+    }
+
+}

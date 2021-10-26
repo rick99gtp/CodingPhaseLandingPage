@@ -204,6 +204,7 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   font-size: 20px;
   text-decoration: none;
   padding: 21px 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .main .bottle-description__container .bottle-details__container {
@@ -287,6 +288,10 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 }
 
 .customer-service__container a {
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
   background-color: var(--purple-gray);
   text-decoration: none;
   color: #fff;
@@ -347,12 +352,133 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 }
 
 .kombucha-flavors__container .kombucha-flavors__item .kombucha-flavors__item-details a {
+  display: block;
+  width: 90%;
+  margin: 0 auto 70px;
   background-color: var(--purple-gray);
   text-decoration: none;
   color: #fff;
   padding: 20px 25px;
   -webkit-box-shadow: 0px 15px 20px 0px #8f8f8f;
           box-shadow: 0px 15px 20px 0px #8f8f8f;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popular__container {
+  padding: 20px 5px;
+}
+
+.popular__container .popular__container-header {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.popular__container .popular__container-header h2 {
+  text-align: center;
+  font-size: 30px;
+  color: var(--purple-gray);
+}
+
+.popular__container .popular__container-header .popular-numbers__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.popular__container .popular__container-header .popular-numbers__container .popular__number {
+  position: relative;
+  padding-right: 1.25rem;
+  font-size: 1.5625rem;
+}
+
+.popular__container .popular__container-header .popular-numbers__container .popular__number::before {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  -webkit-transform: translate(-1rem, -1rem);
+          transform: translate(-1rem, -1rem);
+  height: 1px;
+  width: 70%;
+  margin: 0 1.25rem;
+  background-color: var(--purple-gray);
+}
+
+.popular__container .popular__container-items {
+  padding: 30px 5px;
+}
+
+.popular__container .popular__container-items .popular-item {
+  text-align: center;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 10px 10px 5px #cccccc;
+          box-shadow: 0px 10px 10px 5px #cccccc;
+}
+
+.popular__container .popular__container-items .popular-item .popular-item__description {
+  color: var(--purple-gray);
+  font-family: 'Poppins', sans-serif;
+}
+
+.popular__container .popular__container-items .popular-item .popular-item__description h3 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.popular__container .popular__container-items .popular-item .popular-item__description p {
+  font-size: 12px;
+  margin-bottom: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.popular__container .popular__container-items .popular-item .popular-item__description a {
+  margin: 50px auto 0;
+  display: block;
+  background-color: var(--purple-gray);
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 21px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.stats__container {
+  background-color: var(--light-gray);
+  padding: 60px 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.stats__container .stats__container-chartbox {
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 10px 20px 0px #ececec;
+          box-shadow: 0px 10px 20px 0px #ececec;
+  text-align: center;
+}
+
+.stats__container .stats__container-numbers {
+  text-align: center;
+}
+
+.stats__container .stats__container-numbers .stats-details {
+  color: var(--purple-gray);
+  padding: 20px 0;
+}
+
+.stats__container .stats__container-numbers .stats-details p:first-child {
+  font-size: 30px;
+}
+
+.stats__container .stats__container-numbers .stats-details p:nth-child(2) {
+  font-size: 16px;
 }
 
 body {
