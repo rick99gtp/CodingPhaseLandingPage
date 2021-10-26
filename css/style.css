@@ -418,8 +418,8 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 .popular__container .popular__container-items .popular-item {
   text-align: center;
   margin-bottom: 30px;
-  -webkit-box-shadow: 0px 10px 10px 5px #cccccc;
-          box-shadow: 0px 10px 10px 5px #cccccc;
+  -webkit-box-shadow: 0px 10px 20px 5px #cccccc;
+          box-shadow: 0px 10px 20px 5px #cccccc;
 }
 
 .popular__container .popular__container-items .popular-item .popular-item__description {
