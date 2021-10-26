@@ -1,6 +1,6 @@
 .stats__container {
     background-color: var(--light-gray);
-    padding: 60px 5px;
+    padding: 60px 20px;
     font-family: 'Poppins', sans-serif;
 
     .stats__container-chartbox {
@@ -12,6 +12,7 @@
 
     .stats__container-numbers {
         text-align: center;
+        padding: 20px 0 0;
 
         .stats-details {
             color: var(--purple-gray);

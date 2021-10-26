@@ -452,7 +452,7 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 
 .stats__container {
   background-color: var(--light-gray);
-  padding: 60px 5px;
+  padding: 60px 20px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -466,6 +466,7 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 
 .stats__container .stats__container-numbers {
   text-align: center;
+  padding: 20px 0 0;
 }
 
 .stats__container .stats__container-numbers .stats-details {
