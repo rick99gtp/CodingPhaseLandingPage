@@ -554,6 +554,47 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   line-height: 2;
 }
 
+.testimonials__container .carousel-controls {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials__container .carousel-controls .prev, .testimonials__container .carousel-controls .next {
+  width: 60px;
+  height: 60px;
+  padding: 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5px;
+  color: #dadada;
+}
+
+.testimonials__container .carousel-controls .next i {
+  padding-left: 5px;
+}
+
+.testimonials__container .carousel-controls .prev i {
+  padding-right: 5px;
+}
+
+.testimonials__container .carousel-controls .active {
+  background-color: #383838;
+  color: #fff;
+  border-radius: 50%;
+}
+
 body {
   padding: 45px 0;
 }
