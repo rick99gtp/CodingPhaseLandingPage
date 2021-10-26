@@ -604,6 +604,32 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   color: #fff;
 }
 
+.footer__container .footer-left {
+  padding: 10px 5px;
+  text-align: center;
+  color: var(--purple-gray);
+}
+
+.footer__container .footer-left p {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  width: 90%;
+  margin: 0 auto 40px;
+  line-height: 2;
+}
+
+.footer__container .footer-left h3 {
+  font-size: 30px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.footer__container .footer-left .footer-socials i {
+  padding: 0 20px;
+  color: var(--purple-gray);
+}
+
 body {
   padding: 45px 0;
 }

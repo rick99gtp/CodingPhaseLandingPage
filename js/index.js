@@ -6,7 +6,7 @@ const carouselWrapper = document.querySelector('.testimonial-carousel-wrapper');
 const carouselTestimonials = document.querySelectorAll('.testimonial');
 
 // get the width of the carousel wrapper
-const carouselWidth = carouselWrapper.offsetWidth;
+let carouselWidth = 0;
 
 // set current position of carousel
 let pos = 0;
@@ -15,7 +15,7 @@ let pos = 0;
 let slide = 0;
 
 // get width of one testimonial
-const testimonialWidth = carouselWidth / carouselTestimonials.length;
+let testimonialWidth = 0;
 
 const isActive = (elem) => {
     return elem.classList.contains('active')
@@ -137,3 +137,12 @@ setInterval(() => {
         scrolled = false;
     }
 }, 100);
+
+const reportWindowSize = () => {
+    carouselWidth = carouselWrapper.offsetWidth;
+    testimonialWidth = carouselWidth / carouselTestimonials.length;
+};
+
+window.onresize = reportWindowSize;
+
+reportWindowSize();
