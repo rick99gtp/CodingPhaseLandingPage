@@ -440,8 +440,9 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 }
 
 .popular__container .popular__container-items .popular-item .popular-item__description a {
-  margin: 50px auto 0;
-  display: block;
+  width: 90%;
+  margin: 40px auto 10px;
+  display: inline-block;
   background-color: var(--purple-gray);
   color: #fff;
   font-size: 20px;
@@ -483,21 +484,25 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 }
 
 .testimonials__container {
-  padding: 50px 5px;
+  padding: 50px 0;
   font-family: 'Poppins', sans-serif;
   text-align: center;
   overflow: hidden;
 }
 
+.testimonials__container .testimonials-comment {
+  padding: 0 5px;
+}
+
 .testimonials__container h2 {
   color: var(--purple-gray);
   font-size: 30px;
-  color: var(--purple-gray);
   margin-bottom: 35px;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .testimonials__container p:first-child {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   margin-bottom: 73px;
 }
@@ -506,14 +511,47 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: green;
   width: 500%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .testimonials__container .testimonial-carousel-wrapper .testimonial {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.testimonials__container .testimonial-carousel-wrapper .testimonial .testimonial-profile {
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 10px 10px 5px #cccccc;
+          box-shadow: 0px 10px 10px 5px #cccccc;
+}
+
+.testimonials__container .testimonial-carousel-wrapper .testimonial .testimonial-inner {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.testimonials__container .testimonial-carousel-wrapper .testimonial .testimonial-inner .testimonial-stars-and-name {
+  margin-top: 20px;
+}
+
+.testimonials__container .testimonial-carousel-wrapper .testimonial .testimonial-inner .testimonial-stars-and-name .testimonial-name {
+  font-size: 16px;
+}
+
+.testimonials__container .testimonial-carousel-wrapper .testimonial .testimonial-inner .quote {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 4.375rem;
+}
+
+.testimonials__container .testimonial-carousel-wrapper .testimonial .testimonial-quote {
+  color: var(--purple-gray);
+  font-size: 14px;
+  line-height: 2;
 }
 
 body {
