@@ -482,6 +482,40 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   font-size: 16px;
 }
 
+.testimonials__container {
+  padding: 50px 5px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+.testimonials__container h2 {
+  color: var(--purple-gray);
+  font-size: 30px;
+  color: var(--purple-gray);
+  margin-bottom: 35px;
+}
+
+.testimonials__container p:first-child {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 73px;
+}
+
+.testimonials__container .testimonial-carousel-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: green;
+  width: 500%;
+}
+
+.testimonials__container .testimonial-carousel-wrapper .testimonial {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 body {
   padding: 45px 0;
 }
