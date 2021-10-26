@@ -25,6 +25,9 @@
         display: flex;
         width: 500%;
         align-items: center;
+        position: relative;
+        transition: .4s ease;
+        margin-top: 20px;
 
         .testimonial {
             width: 100%;
@@ -47,7 +50,7 @@
                     }
                 }
 
-                .quote {
+                .testimonial-quote {
                     position: absolute;
                     left: 10px;
                     top: 0;
@@ -55,7 +58,7 @@
                 }
             }
 
-            .testimonial-quote {
+            .quote {
                 color: var(--purple-gray);
                 font-size: 14px;
                 line-height: 2;
@@ -68,6 +71,7 @@
         position: relative;
         display: flex;
         justify-content: center;
+        margin-top: 20px;
 
         .prev, .next {
             width: 60px;
@@ -78,6 +82,9 @@
             align-items: center;
             margin: 0 5px;
             color: #dadada;
+            transition: .4s ease;
+            border-radius: 50%;
+            cursor: pointer;
         }
 
         .next i {
@@ -91,7 +98,6 @@
         .active {
             background-color: #383838;
             color: #fff;
-            border-radius: 50%;
         }
 
     }

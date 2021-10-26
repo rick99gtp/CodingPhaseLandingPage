@@ -515,6 +515,10 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  margin-top: 20px;
 }
 
 .testimonials__container .testimonial-carousel-wrapper .testimonial {
@@ -541,14 +545,14 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   font-size: 16px;
 }
 
-.testimonials__container .testimonial-carousel-wrapper .testimonial .testimonial-inner .quote {
+.testimonials__container .testimonial-carousel-wrapper .testimonial .testimonial-inner .testimonial-quote {
   position: absolute;
   left: 10px;
   top: 0;
   width: 4.375rem;
 }
 
-.testimonials__container .testimonial-carousel-wrapper .testimonial .testimonial-quote {
+.testimonials__container .testimonial-carousel-wrapper .testimonial .quote {
   color: var(--purple-gray);
   font-size: 14px;
   line-height: 2;
@@ -562,6 +566,7 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 20px;
 }
 
 .testimonials__container .carousel-controls .prev, .testimonials__container .carousel-controls .next {
@@ -579,6 +584,10 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
           align-items: center;
   margin: 0 5px;
   color: #dadada;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .testimonials__container .carousel-controls .next i {
@@ -592,7 +601,6 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 .testimonials__container .carousel-controls .active {
   background-color: #383838;
   color: #fff;
-  border-radius: 50%;
 }
 
 body {
