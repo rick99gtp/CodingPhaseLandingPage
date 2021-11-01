@@ -190,5 +190,18 @@
                 }
             }
         }
+        .company-icons__container {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            .company-icon {
+                padding: 0;
+
+                img {
+                    width: 40%;
+                }
+            }
+        }
     }
 }

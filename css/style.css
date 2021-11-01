@@ -303,6 +303,22 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   .main .hero__section .bottle-description__container .bottle-details__container .bottle-details__container-detail .bottle-detail__info {
     font-size: 22px;
   }
+  .main .company-icons__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .company-icons__container .company-icon {
+    padding: 0;
+  }
+  .main .company-icons__container .company-icon img {
+    width: 40%;
+  }
 }
 
 .customer-service__container {
