@@ -265,6 +265,7 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
         -ms-flex: 1;
             flex: 1;
     text-align: left;
+    margin-top: 125px;
   }
   .main .hero__section .bottle-description__container h1 {
     font-size: 80px;
@@ -281,6 +282,26 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   }
   .main .hero__section .bottle-description__container .bottle-price-line {
     width: 30%;
+  }
+  .main .hero__section .bottle-description__container a {
+    width: 25%;
+    text-align: center;
+    margin: 50px 0;
+  }
+  .main .hero__section .bottle-description__container .bottle-details__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 20%;
+  }
+  .main .hero__section .bottle-description__container .bottle-details__container .bottle-details__container-detail .bottle-detail__header {
+    font-size: 12px;
+  }
+  .main .hero__section .bottle-description__container .bottle-details__container .bottle-details__container-detail .bottle-detail__info {
+    font-size: 22px;
   }
 }
 

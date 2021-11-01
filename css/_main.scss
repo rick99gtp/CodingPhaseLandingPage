@@ -32,17 +32,6 @@
                     left: 110%;
                     transform: translateY(-50%);
                 }
-    
-                // &::after {
-                //     content: '';
-                //     position: absolute;
-                //     background-color: #000;
-                //     height: 1px;
-                //     width: 30px;
-                //     top: 50%;
-                //     left: -10%;
-                //     transform: translate(-110%, -50%);
-                // }
             }
     
             h1 {
@@ -155,6 +144,7 @@
             .bottle-description__container {
                 flex: 1;
                 text-align: left;
+                margin-top: 125px;
 
                 h1 {
                     font-size: 80px;
@@ -176,6 +166,27 @@
 
                 .bottle-price-line {
                     width: 30%;
+                }
+
+                a {
+                    width: 25%;
+                    text-align: center;
+                    margin: 50px 0;
+                }
+
+                .bottle-details__container {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 20%;
+
+                    .bottle-details__container-detail {
+                        .bottle-detail__header {
+                            font-size: 12px;
+                        }
+                        .bottle-detail__info {
+                            font-size: 22px;
+                        }
+                    }
                 }
             }
         }
