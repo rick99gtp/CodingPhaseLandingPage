@@ -29,6 +29,39 @@
     }
 
     .footer-right {
+        padding: 10px 5px;
+        text-align: center;
+        color: var(--purple-gray);
 
+        .footer-list {
+            h4 {
+                font-size: 32px;
+                font-family: 'PT Sans', sans-serif;
+
+            }
+            ul {
+                padding: 0 0 20px 0;
+                li {
+                    font-size: 16px;
+                    padding: 10px 0;
+                    font-family: 'Montserrat Alternates', sans-serif;
+    
+                    a {
+                        text-decoration: none;
+
+                        &:link {
+                            color: var(--purple-gray);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 16px;
+        text-align: center;
+        color: #ccc;
+        font-family: 'Montserrat Alternates', sans-serif;
     }
 }

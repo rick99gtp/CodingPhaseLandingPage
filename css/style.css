@@ -120,24 +120,28 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   margin-top: 25px;
 }
 
-.main .main__bottle-image {
+.main .hero__section .bottle__container {
+  width: 100%;
+}
+
+.main .hero__section .bottle__container .main__bottle-image {
   width: 100%;
   height: auto;
 }
 
-.main .bottle-description__container {
+.main .hero__section .bottle-description__container {
   width: 90%;
   margin: 0 auto;
   text-align: center;
 }
 
-.main .bottle-description__container .bottle-description__organic-tea {
+.main .hero__section .bottle-description__container .bottle-description__organic-tea {
   display: inline-block;
   position: relative;
   font-size: 14px;
 }
 
-.main .bottle-description__container .bottle-description__organic-tea::before {
+.main .hero__section .bottle-description__container .bottle-description__organic-tea::before {
   content: '';
   position: absolute;
   background-color: #000;
@@ -149,27 +153,15 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
           transform: translateY(-50%);
 }
 
-.main .bottle-description__container .bottle-description__organic-tea::after {
-  content: '';
-  position: absolute;
-  background-color: #000;
-  height: 1px;
-  width: 30px;
-  top: 50%;
-  left: -10%;
-  -webkit-transform: translate(-110%, -50%);
-          transform: translate(-110%, -50%);
-}
-
-.main .bottle-description__container h1 {
+.main .hero__section .bottle-description__container h1 {
   color: var(--purple-gray);
   font-family: 'Poppins', sans-serif;
   font-size: 2.35rem;
   font-weight: 300;
 }
 
-.main .bottle-description__container h2 {
-  font-family: 'PT Sans', sans-serif;
+.main .hero__section .bottle-description__container h2 {
+  font-family: 'Poppins', sans-serif;
   font-size: 40px;
   color: var(--orange);
   line-height: 20px;
@@ -177,7 +169,7 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   margin-top: 5px;
 }
 
-.main .bottle-description__container p.bottle-text {
+.main .hero__section .bottle-description__container p.bottle-text {
   font-family: 'Poppins', sans-serif;
   text-align: justify;
   line-height: 1.5;
@@ -185,18 +177,18 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   margin: 25px 0;
 }
 
-.main .bottle-description__container p.bottle-price {
+.main .hero__section .bottle-description__container p.bottle-price {
   font-family: 'Lato', sans-serif;
   color: var(--dark-gray);
   font-size: 44px;
 }
 
-.main .bottle-description__container hr.bottle-price-line {
+.main .hero__section .bottle-description__container hr.bottle-price-line {
   margin-top: 25px;
   color: var(--dark-gray);
 }
 
-.main .bottle-description__container a {
+.main .hero__section .bottle-description__container a {
   margin: 50px auto 0;
   display: block;
   background-color: var(--purple-gray);
@@ -207,22 +199,22 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   font-family: 'Poppins', sans-serif;
 }
 
-.main .bottle-description__container .bottle-details__container {
+.main .hero__section .bottle-description__container .bottle-details__container {
   width: 100%;
   margin: 50px 0;
 }
 
-.main .bottle-description__container .bottle-details__container .bottle-details__container-detail {
+.main .hero__section .bottle-description__container .bottle-details__container .bottle-details__container-detail {
   color: var(--purple-gray);
   font-size: 20px;
   padding: 20px 0;
 }
 
-.main .bottle-description__container .bottle-details__container .bottle-details__container-detail .bottle-detail__header {
+.main .hero__section .bottle-description__container .bottle-details__container .bottle-details__container-detail .bottle-detail__header {
   font-family: 'Poppins', sans-serif;
 }
 
-.main .bottle-description__container .bottle-details__container .bottle-details__container-detail .bottle-detail__info {
+.main .hero__section .bottle-description__container .bottle-details__container .bottle-details__container-detail .bottle-detail__info {
   color: var(--orange);
   font-size: 30px;
   font-family: 'Poppins', sans-serif;
@@ -247,6 +239,49 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 
 .main .company-icons__container .company-icon img {
   width: 30%;
+}
+
+@media only screen and (min-width: 768px) {
+  .main .hero__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .hero__section .bottle__container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+  }
+  .main .hero__section .bottle__container .main__bottle-image {
+    height: 800px;
+    width: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .main .hero__section .bottle-description__container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: left;
+  }
+  .main .hero__section .bottle-description__container h1 {
+    font-size: 80px;
+  }
+  .main .hero__section .bottle-description__container h2 {
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: 5px;
+  }
+  .main .hero__section .bottle-description__container p.bottle-text {
+    width: 68%;
+    text-align: left;
+    padding: 25px 0 0 0;
+  }
+  .main .hero__section .bottle-description__container .bottle-price-line {
+    width: 30%;
+  }
 }
 
 .customer-service__container {
@@ -628,6 +663,42 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
 .footer__container .footer-left .footer-socials i {
   padding: 0 20px;
   color: var(--purple-gray);
+}
+
+.footer__container .footer-right {
+  padding: 10px 5px;
+  text-align: center;
+  color: var(--purple-gray);
+}
+
+.footer__container .footer-right .footer-list h4 {
+  font-size: 32px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.footer__container .footer-right .footer-list ul {
+  padding: 0 0 20px 0;
+}
+
+.footer__container .footer-right .footer-list ul li {
+  font-size: 16px;
+  padding: 10px 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.footer__container .footer-right .footer-list ul li a {
+  text-decoration: none;
+}
+
+.footer__container .footer-right .footer-list ul li a:link {
+  color: var(--purple-gray);
+}
+
+.footer__container .copyright {
+  font-size: 16px;
+  text-align: center;
+  color: #ccc;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 body {
