@@ -308,6 +308,18 @@
                     }
                 }
             }
+
+            .popular__container-items {
+                display: flex;
+                justify-content: space-between;
+
+                .popular-item {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    padding: 60px 45px;
+                    margin: 0 10px;
+                }
+            }
         }
     }
 }

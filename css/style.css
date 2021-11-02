@@ -415,6 +415,25 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
     width: 50%;
     background-color: var(--purple-gray);
   }
+  .main .popular__container .popular__container-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main .popular__container .popular__container-items .popular-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding: 60px 45px;
+    margin: 0 10px;
+  }
 }
 
 .customer-service__container {
@@ -622,7 +641,7 @@ header .hamburger-menu__container .hamburger-menu__line:nth-child(2) {
   color: #fff;
   font-size: 20px;
   text-decoration: none;
-  padding: 21px 0;
+  padding: 10px 0;
   font-family: 'Poppins', sans-serif;
 }
 
