@@ -4,8 +4,10 @@
 
     .kombucha-flavors__item {
 
-        img {
-            width: 100%;
+        .kombucha-image__container {
+            img {
+                width: 100%;
+            }
         }
 
         .kombucha-flavors__item-details {

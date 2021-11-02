@@ -203,5 +203,68 @@
                 }
             }
         }
+
+        .customer-service__container {
+
+            .customer-service__icons {
+                display: flex;
+                justify-content: space-around;
+                width: 80%;
+                margin: 0 auto;
+
+                .customer-service-icon {
+                    p {
+                        width: 70%;
+                        margin-top: 40px;
+                    }
+                }
+            }
+
+            a {
+                display: block;
+                margin-top: 60px;
+                width: 14%;
+            }
+        }
+
+        .arie-kombucha__container {
+            width: 70%;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 50px;
+            }
+        }
+
+        .kombucha-flavors__container {
+            padding: 0 135px;
+
+            .kombucha-flavors__item {
+                display: flex;
+                margin-bottom: 100px;
+
+                &:first-child, &:last-child {
+                    flex-direction: row-reverse;
+                }
+
+                .kombucha-image__container {
+                    flex: 1;
+
+                    img {
+                        width: 75%;
+                    }
+                }
+                .kombucha-flavors__item-details {
+                    flex: 1;
+                    text-align: left;
+
+                    h3 {
+                        font-size: 40px;
+                    }
+                }
+
+            }
+
+        }
     }
 }
