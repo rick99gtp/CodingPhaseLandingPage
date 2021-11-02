@@ -260,11 +260,54 @@
 
                     h3 {
                         font-size: 40px;
+                        margin-bottom: 30px;
+                    }
+
+                    .kombucha-item__description {
+                        margin-bottom: 50px;
+                    }
+
+                    a {
+                        display: inline-block;
+                        width: 30%;
+                        margin-left: 10px;
+                        margin-bottom: 0;
+                        padding: 20px 25px;
+                        text-align: center;
                     }
                 }
-
             }
+        }
 
+        .popular__container {
+            padding: 0 135px;
+
+            .popular__container-header {
+                h2 {
+                    text-align: left;
+                    font-size: 50px;
+                }
+
+                .popular-numbers__container {
+                    justify-content: flex-end;
+                    margin-right: 30px;
+
+                    .popular__number {
+                        position: relative;
+                        padding-right: 40px;
+                        margin-left: 25px;
+
+                        &::before {
+                            left: 32px;
+                            top: 1.85rem;
+                            transform: translate(-1rem, -1rem);
+                            height: 2px;
+                            width: 50%;
+                            background-color: var(--purple-gray);
+                        }
+                    }
+                }
+            }
         }
     }
 }

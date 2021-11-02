@@ -18,7 +18,8 @@
             .popular__number {
                 position: relative;
                 padding-right: 1.25rem;
-                font-size: 1.5625rem;
+                font-size: 1.25rem;
+                color: #aaa;
 
                 &::before {
                     content: '';
@@ -31,6 +32,12 @@
                     margin: 0 1.25rem;
                     background-color: var(--purple-gray);
                 }
+            }
+
+            .popular-bold {
+                font-weight: bold;
+                color: #000;
+                font-size: 1.5rem;
             }
         }
 
